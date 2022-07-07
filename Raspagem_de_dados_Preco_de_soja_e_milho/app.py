@@ -10,12 +10,8 @@ tds = []
 data_soja = ""; estados_soja = []; praca_soja = []; compra_soja = []; dia_soja = []; semana_soja = []; mes_soja = []
 data_milho = ""; estados_milho = []; praca_milho = []; compra_milho = []; dia_milho = []; semana_milho = []; mes_milho = []
 
-j = 0
-
 for td in soup.find_all('td'):    
-       tds.append(td.text)
-       #print(str(j) + "-" + td.text)
-       j+=1
+       tds.append(td.text)       
 
 def soja():
     #Pegando data de cotação
